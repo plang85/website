@@ -85,7 +85,7 @@ one if you haven't already.
 1. Change to the Kubeflow directory
 
    ```
-   cd ${KFDIR}
+   cd ${KFDIR}/kubeflow
    ```
 
 1. Fetch Kubeflow manifests
@@ -93,16 +93,6 @@ one if you haven't already.
    ```
    make get-pkg
    ```
-
-  * This generates an error like the one below but you can ignore it;
-
-    ```
-    kpt pkg get https://github.com/jlewi/manifests.git@blueprints ./upstream
-    fetching package / from https://github.com/jlewi/manifests to upstream/manifests
-    Error: resources must be annotated with config.kubernetes.io/index to be written to files
-    ```
-
-    * This is being tracked in [GoogleContainerTools/kpt#539](https://github.com/GoogleContainerTools/kpt/issues/539)
 
 ## Configure Kubeflow
 
